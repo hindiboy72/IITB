@@ -4,13 +4,227 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nightmare Shadow</title>
+    <link rel="icon" href="https://hindiboy72.github.io/IITB/yaaay.png" type="image/x-icon">
+    <meta name="title" content="JEE Aspirants Connect - Arjuna Batch Students Network">
+    <meta name="description" content="Connect with fellow JEE aspirants from Arjuna batches. Share notes, study tips, and collaborate with classmates from Arjuna 1.0, 2.0, 3.0, and 4.0 batches.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hindiboy72.github.io/IITB/">
+    <meta property="og:title" content="JEE Aspirants Connect - Arjuna Batch Students Network">
+    <meta property="og:description" content="Connect with fellow JEE aspirants from Arjuna batches. Share notes, study tips, and collaborate with classmates.">
+    <meta property="og:image" content="https://hindiboy72.github.io/IITB/yaaay.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://hindiboy72.github.io/IITB/">
+    <meta property="twitter:title" content="JEE Aspirants Connect - Arjuna Batch Students Network">
+    <meta property="twitter:description" content="Connect with fellow JEE aspirants from Arjuna batches.">
+    <meta property="twitter:image" content="https://hindiboy72.github.io/IITB/yaaay.png">
+
+    <!-- Additional Important Tags -->
+    <meta name="keywords" content="JEE aspirants, NEET students, Arjuna batch, study group, student network, IIT preparation, medical aspirants, Arjuna 1.0, Arjuna 2.0, Arjuna 3.0, Arjuna 4.0">
+    <meta name="author" content="Arjuna Students">
+    <meta name="robots" content="index, follow">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Arjuna Batch Students Network",
+      "description": "Platform for JEE aspirants to connect and collaborate",
+      "url": "https://hindiboy72.github.io/IITB/",
+      "memberOf": {
+        "@type": "Organization",
+        "name": "Arjuna Batches"
+      }
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #0c0c0c 0%, #1a1a2e 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(30, 30, 46, 0.8);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        header {
+            background: linear-gradient(135deg, #16213e 0%, #0f3460 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            letter-spacing: 1px;
+        }
+        
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.8;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        h2 {
+            color: #e0e0e0;
+            margin-bottom: 25px;
+            text-align: center;
+            font-weight: 500;
+            font-size: 1.4rem;
+        }
+        
+        .subject-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .subject-card {
+            background: rgba(40, 40, 60, 0.7);
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        
+        .subject-card:hover {
+            transform: translateY(-5px);
+            background: rgba(50, 50, 70, 0.9);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            border-color: rgba(100, 100, 255, 0.3);
+        }
+        
+        .subject-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            opacity: 0.9;
+        }
+        
+        .subject-link {
+            color: #64b5f6;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 500;
+            display: block;
+            transition: color 0.3s;
+        }
+        
+        .subject-link:hover {
+            color: #90caf9;
+        }
+        
+        .subject-desc {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #7f8c8d;
+            font-size: 0.85rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 10px;
+            }
+            
+            .content {
+                padding: 25px 20px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .subject-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-    
-    <a href="subjects/physics/physics-home.html">Physics</a><br>
-    <a href="subjects/maths/maths-home.html">maths</a><br>
-    <a href="subjects/chemistry-phy/">chemistry-phy</a><br>
-    <a href="subjects/chemistry-ioc/">chemistry-ioc</a><br>
-    <a href="subjects/chemistry-oc/">chemistry-oc</a><br>
+    <div class="container">
+        <header>
+            <h1>Nightmare Shadow</h1>
+            <p class="subtitle">JEE Preparation Portal</p>
+        </header>
+        
+        <div class="content">
+            <h2>Select a Subject</h2>
+            
+            <div class="subject-grid">
+                <div class="subject-card">
+                    <div class="subject-icon">⚛️</div>
+                    <a href="subjects/physics/physics-home.html" class="subject-link">Physics</a>
+                    <p class="subject-desc">Mechanics, Electromagnetism, Modern Physics</p>
+                </div>
+                
+                <div class="subject-card">
+                    <div class="subject-icon">∫</div>
+                    <a href="subjects/maths/maths-home.html" class="subject-link">Maths</a>
+                    <p class="subject-desc">Algebra, Calculus, Coordinate Geometry</p>
+                </div>
+                
+                <div class="subject-card">
+                    <div class="subject-icon">🧪</div>
+                    <a href="subjects/chemistry-phy/" class="subject-link">Physical Chemistry</a>
+                    <p class="subject-desc">Atomic Structure, Thermodynamics, Kinetics</p>
+                </div>
+                
+                <div class="subject-card">
+                    <div class="subject-icon">🔬</div>
+                    <a href="subjects/chemistry-ioc/" class="subject-link">Inorganic Chemistry</a>
+                    <p class="subject-desc">Periodic Table, Chemical Bonding, Coordination</p>
+                </div>
+                
+                <div class="subject-card">
+                    <div class="subject-icon">⚗️</div>
+                    <a href="subjects/chemistry-oc/" class="subject-link">Organic Chemistry</a>
+                    <p class="subject-desc">Hydrocarbons, Functional Groups, Reactions</p>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            Nightmare Shadow &copy; 2025 - JEE Preparation Portal
+        </footer>
+    </div>
 </body>
 </html>
